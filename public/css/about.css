@@ -1,0 +1,23 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-page-main {
+    width: auto;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.about-container {
+    padding: 40px 0 40px 0;
+    border-bottom: 1px solid #dadada;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.about-container p {
+    line-height: 30px;
+    color: #2B4865;
+}

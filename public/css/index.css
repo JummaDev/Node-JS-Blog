@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root{
+    --dark-blue-color: #2c3241;
+    --crimson-color: crimson;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* main css starts here */
+.index-page-main {
+    width: auto;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    min-height: 100vh;
+}
+
+
+/* welcome container css starts here */
+.index-page-main .welcome-text-container {
+    padding: 40px 0 40px 0;
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(2, auto);
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #dadada;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+
+.index-page-main #welcome-text-heading{
+    display: inline;
+}
+.index-page-main .welcome-text-container .cursor{
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.index-page-main .welcome-container-first-wrapper {
+    width: 40vw;
+}
+
+.welcome-text-container p {
+    line-height: 30px;
+    color: #2B4865;
+}
+/* welcome container css ends here */
+
+.index-page-main .first-content {
+    display: grid;
+    padding: 40px 0 40px 0;
+    grid-template-columns: repeat(2,auto);
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    padding-top: 4rem;
+    border-bottom: 1px solid #dadada;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.index-page-main .first-content .first-content-second-wrapper {
+    width: 40vw;
+}
+.index-page-main .first-content .first-content-second-wrapper p {
+    line-height: 30px;
+    color: #2B4865;
+}
+.index-page-main .second-content {
+    display: grid;
+    padding: 40px 0 40px 0;
+    grid-template-columns: repeat(2,auto);
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    padding-top: 4rem;
+    border-bottom: 1px solid #dadada;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.index-page-main .second-content .second-content-first-wrapper {
+    width: 40vw;
+}
+.index-page-main .second-content .second-content-first-wrapper p {
+    line-height: 30px;
+    color: #2B4865;
+}
+
+.index-page-main .blog-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    margin-top: 15px;
+    background-color: #020207;
+    background-image: linear-gradient(to bottom right, #020207, #5d6164);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.index-page-main .blog-btn:hover {
+    background-color: #0a47a1; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #0a47a1, rgb(60, 140, 214));
+}
+
+.index-page-main .blog-btn a{
+    text-decoration: none;
+    color: white;
+}
+/* main css ends here */
+
+/* media query css starts here */
+@media (max-width: 540px) {
+    /* main page first container */
+    .index-page-main .welcome-text-container {
+        grid-template-columns: repeat(1, auto);
+
+    }
+
+    .index-page-main .welcome-container-first-wrapper {
+        width: 80vw;
+        order: 2;
+    }
+
+    .index-page-main .welcome-container-second-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .index-page-main .welcome-container-second-wrapper img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* main page second container */
+    .index-page-main .first-content {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .index-page-main .first-content .first-content-first-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .index-page-main .first-content .first-content-first-wrapper img {
+        width: 120px;
+        height: 120px;
+    }
+    .index-page-main .first-content .first-content-second-wrapper {
+        width: 80vw;
+    }
+
+    /* main page third container */
+    .index-page-main .second-content {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .index-page-main .second-content .second-content-first-wrapper {
+        width: 80vw;
+        order: 2;
+    }
+
+    .index-page-main .second-content .second-content-second-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .index-page-main .second-content .second-content-second-wrapper img{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --dark-blue-color: #2c3241;
+    --crimson-color: crimson;
+}
+
+body{
+    margin: auto;
+    padding: auto;
+}
+
+/* main css starts here */
+.blog-page-main {
+    min-height: 100vh;
+}
+
+.blog-container{
+    padding: 8px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    border: 1px solid rgb(168, 167, 167);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+
+}
+
+.blog-container h1 a{
+    text-decoration: none;
+    color: var(--dark-blue-color);
+}
+
+.blog-container h1 a:hover{
+    color: rgb(26, 85, 194);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.blog-container p {
+    padding: 5px 20px 5px 20px; 
+}
+
+.blog-container p a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2c3241;
+    text-decoration: none;
+}
+
+.blog-link-btn{
+    text-decoration: none;
+    color:rgb(16, 106, 190);
+    font-weight: bold;
+}
+
+.blog-link-btn:hover{
+    color:rgb(139, 13, 13);
+}
+
+/* main css ends here */
+
+/* media query starts here */
+@media (max-width: 600px) {
+    .blog-container h1 a {
+        font-size: 25px;
+    }
+
+    .blog-container p a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/createpost.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Admin Panel | Post Creation</title>
+</head>
+
+<body>
+    <!-- header's html starts below -->
+    <%- include('../layouts/header'); -%>
+    <!-- header html ends here -->
+
+    <!-- main html starts here -->
+    <main class="createpost-page-main">
+        <h3>Form for Creating post by Admin</h3>
+        <div class="admin-post-container">
+            <form action="/admin/createpost" method="POST" name="postcreateForm" id="create-post-form" enctype="multipart/form-data">
+
+                <div>
+                <h4>Post Description:</h4>
+                <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div>
+                <h4>Post Keywords:</h4>
+                <textarea name="keywords" id="keywords" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div>
+                <h4>Overview:</h4>
+                <textarea name="overview" id="overview" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div>
+                <h4>Post title:</h4>
+                <input type="text" name="posttitle" id="posttitle" required><br>
+                </div>
+
+                <div>
+                <h4>Post Heading:</h4>
+                <input type="text" name="title" id="title" required><br>
+                </div>
+
+                <div>
+                <h4>Paragraph1:</h4>
+                <textarea name="para1" id="para1" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL1</h4>
+                <input type="text" name="linkurl1" id="linkurl1">
+                </div>
+
+                <div>
+                <h4>Link Text1</h4>
+                <input type="text" name="linktext1" id="linktext1">
+                </div>
+
+                <div>
+                <h4>image1:</h4>
+                <input type="file" name="image1" id="image1">
+                </div>
+
+                <div>
+                <h4>html-code1:</h4>
+                <textarea name="htmlcode1" id="htmlcode1" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code1:</h4>
+                <textarea name="csscode1" id="csscode1" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code1:</h4>
+                <textarea name="javascriptcode1" id="javascriptcode1" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code1:</h4>
+                <textarea name="reactcode1" id="reactcode1" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph2:</h4>
+                <textarea name="para2" id="para2" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL2</h4>
+                <input type="text" name="linkurl2" id="linkurl2">
+                </div>
+
+                <div>
+                <h4>Link Text2</h4>
+                <input type="text" name="linktext2" id="linktext2">
+                </div>
+
+                <div>
+                <h4>image2:</h4>
+                <input type="file" name="image2" id="image2">
+                </div>
+
+                <div>
+                <h4>html-code2:</h4>
+                <textarea name="htmlcode2" id="htmlcode2" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code2:</h4>
+                <textarea name="csscode2" id="csscode2" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code2:</h4>
+                <textarea name="javascriptcode2" id="javascriptcode2" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code2:</h4>
+                <textarea name="reactcode2" id="reactcode2" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph3:</h4>
+                <textarea name="para3" id="para3" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL3</h4>
+                <input type="text" name="linkurl3" id="linkurl3">
+                </div>
+
+                <div>
+                <h4>Link Text3</h4>
+                <input type="text" name="linktext3" id="linktext3">
+                </div>
+
+                <div>
+                <h4>image3:</h4>
+                <input type="file" name="image3" id="image3">
+                </div>
+
+                <div>
+                <h4>html-code3:</h4>
+                <textarea name="htmlcode3" id="htmlcode3" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code3:</h4>
+                <textarea name="csscode3" id="csscode3" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code3:</h4>
+                <textarea name="javascriptcode3" id="javascriptcode3" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code3:</h4>
+                <textarea name="reactcode3" id="reactcode3" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph4:</h4>
+                <textarea name="para4" id="para4" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL4</h4>
+                <input type="text" name="linkurl4" id="linkurl4">
+                </div>
+
+                <div>
+                <h4>Link Text4</h4>
+                <input type="text" name="linktext4" id="linktext4">
+                </div>
+
+                <div>
+                <h4>image4:</h4>
+                <input type="file" name="image4" id="image4">
+                </div>
+
+                <div>
+                <h4>html-code4:</h4>
+                <textarea name="htmlcode4" id="htmlcode4" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code4:</h4>
+                <textarea name="csscode4" id="csscode4" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code4:</h4>
+                <textarea name="javascriptcode4" id="javascriptcode4" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code4:</h4>
+                <textarea name="reactcode4" id="reactcode4" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph5:</h4>
+                <textarea name="para5" id="para5" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL5</h4>
+                <input type="text" name="linkurl5" id="linkurl5">
+                </div>
+    
+                <div>
+                <h4>Link Text5</h4>
+                <input type="text" name="linktext5" id="linktext5">
+                </div>
+
+                <div>
+                <h4>image5:</h4>
+                <input type="file" name="image5" id="image5">
+                </div>
+
+                <div>
+                <h4>html-code5:</h4>
+                <textarea name="htmlcode5" id="htmlcode5" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code5:</h4>
+                <textarea name="csscode5" id="csscode5" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code5:</h4>
+                <textarea name="javascriptcode5" id="javascriptcode5" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code5:</h4>
+                <textarea name="reactcode5" id="reactcode5" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph6:</h4>
+                <textarea name="para6" id="para6" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL6</h4>
+                <input type="text" name="linkurl6" id="linkurl6">
+                </div>
+    
+                <div>
+                <h4>Link Text6</h4>
+                <input type="text" name="linktext6" id="linktext6">
+                </div>
+
+                <div>
+                <h4>image6:</h4>
+                <input type="file" name="image6" id="image6">
+                </div>
+
+                <div>
+                <h4>html-code6:</h4>
+                <textarea name="htmlcode6" id="htmlcode6" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code6:</h4>
+                <textarea name="csscode6" id="csscode6" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code6:</h4>
+                <textarea name="javascriptcode6" id="javascriptcode6" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code6:</h4>
+                <textarea name="reactcode6" id="reactcode6" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph7:</h4>
+                <textarea name="para7" id="para7" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL7</h4>
+                <input type="text" name="linkurl7" id="linkurl7">
+                </div>
+    
+                <div>
+                <h4>Link Text7</h4>
+                <input type="text" name="linktext7" id="linktext7">
+                </div>
+
+                <div>
+                <h4>image7:</h4>
+                <input type="file" name="image7" id="image7">
+                </div>
+
+                <div>
+                <h4>html-code7:</h4>
+                <textarea name="htmlcode7" id="htmlcode7" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code7:</h4>
+                <textarea name="csscode7" id="csscode7" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code7:</h4>
+                <textarea name="javascriptcode7" id="javascriptcode7" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code7:</h4>
+                <textarea name="reactcode7" id="reactcode7" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph8:</h4>
+                <textarea name="para8" id="para8" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL8</h4>
+                <input type="text" name="linkurl8" id="linkurl8">
+                </div>
+    
+                <div>
+                <h4>Link Text8</h4>
+                <input type="text" name="linktext8" id="linktext8">
+                </div>
+
+                <div>
+                <h4>image8:</h4>
+                <input type="file" name="image8" id="image8">
+                </div>
+
+                <div>
+                <h4>html-code8:</h4>
+                <textarea name="htmlcode8" id="htmlcode8" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code8:</h4>
+                <textarea name="csscode8" id="csscode8" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code8:</h4>
+                <textarea name="javascriptcode8" id="javascriptcode8" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code8:</h4>
+                <textarea name="reactcode8" id="reactcode8" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph9:</h4>
+                <textarea name="para9" id="para9" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL9</h4>
+                <input type="text" name="linkurl9" id="linkurl9">
+                </div>
+    
+                <div>
+                <h4>Link Text9</h4>
+                <input type="text" name="linktext9" id="linktext9">
+                </div>
+
+                <div>
+                <h4>image9:</h4>
+                <input type="file" name="image9" id="image9">
+                </div>
+
+                <div>
+                <h4>html-code9:</h4>
+                <textarea name="htmlcode9" id="htmlcode9" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code9:</h4>
+                <textarea name="csscode9" id="csscode9" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code9:</h4>
+                <textarea name="javascriptcode9" id="javascriptcode9" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code9:</h4>
+                <textarea name="reactcode9" id="reactcode9" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Paragraph10:</h4>
+                <textarea name="para10" id="para10" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>Link URL10</h4>
+                <input type="text" name="linkurl10" id="linkurl10">
+                </div>
+    
+                <div>
+                <h4>Link Text10</h4>
+                <input type="text" name="linktext10" id="linktext10">
+                </div>
+
+                <div>
+                <h4>image10:</h4>
+                <input type="file" name="image10" id="image10">
+                </div>
+
+                <div>
+                <h4>html-code10:</h4>
+                <textarea name="htmlcode10" id="htmlcode10" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>css-code10:</h4>
+                <textarea name="csscode10" id="csscode10" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>javascript-code10:</h4>
+                <textarea name="javascriptcode10" id="javascriptcode10" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <h4>react-code10:</h4>
+                <textarea name="reactcode10" id="reactcode10" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                <input type="submit" value="Submit Blog" id="blogBtn">
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- main html ends here -->
+
+    <hr class="footer-hr">
+
+    <!-- footer html starts here -->
+    <%- include('../layouts/footer'); -%>
+    <!-- footer html ends here -->
+
+    <script src="js/signup.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

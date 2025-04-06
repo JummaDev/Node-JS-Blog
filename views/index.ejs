@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Code Mentor Guide</title>
+</head>
+
+<body>
+
+  <!-- header's html starts below -->
+  <%- include('layouts/header'); -%>
+  <!-- header html ends here -->
+
+
+  <main class="index-page-main">
+    <div class="welcome-text-container">  
+      <div class="welcome-container-first-wrapper">
+        <h2 id="welcome-text-heading"></h2>
+        <div class="cursor" id="getcursor">|</div>
+        <p>Code Mentor is a programming blog. You can read posts on web development and also other different programming languages. Specially you will read posts about plain javascript, express js, react js, and angular js. If you like any post, please share it on different social plateforms with your friends.</p>
+        <button type="button" class="blog-btn"><a href="/blog">Move to Blog</a></button>
+      </div>
+      <div class="welcome-container-second-wrapper">
+      <img src="img/programmer.png" alt="nice-image" width="250px" height="250px">
+      </div>
+    </div>
+
+    <div class="first-content">
+        <div class="first-content-first-wrapper">
+          <img src="img/frustrated.png" alt="node-js-logo" width="250px" height="250px">
+        </div>
+        <div class="first-content-second-wrapper">
+          <p>There are many key factors for improving coding skill. But two factors are most important while learning any programming language. The first thing is to try to understand the concepts and the second is practice alot.</p>
+          <p>Based on these factors we create an app, project or try to solve many coding problems. Most of the time we solve problems very easily. But sometimes we get stuck and start searching for solutions.</p>
+          <p>As a programming community we all share our experiences with each other to solve problems</p>
+          <p>Based on these, I am here to share my experiences in the form of a blog posts.</p>
+            <button type="button" class="blog-btn"><a href="/blog">Move to Blog</a></button>
+        </div>
+      </div>
+
+      <div class="second-content">
+        <div class="second-content-first-wrapper">
+          <p>There are many key factors for improving coding skill. But two factors are most important while learning any programming language. The first thing is to try to understand the concepts and the second is practice alot.</p>
+          <p>Based on these factors we create an app, project or try to solve many coding problems. Most of the time we solve problems very easily. But sometimes we get stuck and start searching for solutions.</p>
+          <p>As a programming community we all share our experiences with each other to solve problems</p>
+          <p>Based on these, I am here to share my experiences in the form of a blog posts.</p>
+            <button type="button" class="blog-btn"><a href="/blog">Move to Blog</a></button>
+        </div>
+        <div class="second-content-second-wrapper">
+          <img src="img/graphic-design.png" alt="node-js-logo" width="250px" height="250px">
+        </div>
+      </div>
+  </main>
+  <!-- main html ends here -->
+
+  <!-- footer html starts here -->
+  <%- include('layouts/footer'); -%>
+  <!-- footer html ends here -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

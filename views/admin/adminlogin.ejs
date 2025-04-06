@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/signin.css">
+    <link rel="stylesheet" href="/public/css/adminlogin.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Programming Blog | Code Mentor Guide</title>
+</head>
+
+<body>
+    <!-- header's html starts below -->
+    <%- include('../layouts/header'); -%>
+    <!-- header html ends here -->
+    
+
+    <!-- main html starts here -->
+    <main class="admin-page-main">            
+        
+
+        <div class="admin-container">
+            <form action="" method="post" autocomplete="on" id="admin-form">
+                    <h2>Login</h2>
+                    <h5>Email:</h5>
+                    <input type="email" name="email" id="email" required><br>
+                    <h5>Password:</h5>
+                    <input type="password" name="pass" id="pass" required><br><br>
+                    <input type="submit" name="adminlogin" value="Log in" id="adminloginBtn">
+            </form>
+        </div>
+    </main>
+    <!-- main html ends here -->
+
+    <hr class="footer-hr">
+
+    <!-- footer html starts here -->
+    <%- include('../layouts/footer'); -%>
+    <!-- footer html ends here -->
+
+    <script src="/js/header.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

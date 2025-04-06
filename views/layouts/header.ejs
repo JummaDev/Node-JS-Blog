@@ -1,0 +1,53 @@
+<div class="header">
+    <!-- header's logo html starts below -->
+    <div class="logo-container">
+      <span class="logo-coloured">C</span>
+      <span>MG</span>
+    </div>
+     <!-- hamburger div html starts below-->
+     <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- header's nav lists html starts here -->
+    <div class="nav">
+      <ul class="nav-list">
+        <li><a href="/">home</a></li>
+        <li><a href="/blog">blog</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/contact">contact</a></li>
+      </ul>
+    </div>
+    <div class="header-buttons-container">
+      <ul>
+        <% if(!loggedIn) { %>
+        <li class="signin"><a href="/auth/signin">Sign in</a></li>
+        <li class="signup"><a href="/auth/signup">Sign up</a></li>
+        <% } %>
+        <% if(loggedIn) { %>
+        <li class="signout"><a href="/auth/logout">Log out</a></li>
+        <% } %>
+      </ul>
+    </div>
+    
+    <!-- header's nav lists for responsive html starts here -->
+    <div class="nav-responsive">
+      <ul class="nav-list-responsive">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <% if(!loggedIn) { %>
+        <li><a href="/auth/signin">Sign in</a></li>
+        <li><a href="/auth/signup">Sign up</a></li>
+        <% } %>
+        <% if(loggedIn) { %>
+        <li><a href="/auth/logout">Log out</a></li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/header.js"></script>

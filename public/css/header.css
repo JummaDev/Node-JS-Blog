@@ -1,0 +1,187 @@
+/* Header css starts here */
+
+.header {
+    width: auto;
+    height: 50px;
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #dadada;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.header .logo-container {
+    font-size: 30px;
+}
+
+.header .logo-container .logo-coloured {
+    color: var(--crimson-color);
+}
+
+.header .nav .nav-list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 60px;
+}
+
+.header .nav .nav-list li {
+    list-style-type: none;
+}
+
+.header .nav .nav-list li a {
+    text-decoration: none;
+    color: #2B4865;
+    text-transform: uppercase;
+}
+
+.header .header-buttons-container ul{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 30px;
+}
+
+.header .header-buttons-container ul .signin, .signup, .signout {
+    list-style-type: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.header .header-buttons-container ul .signin {
+    background-color: #020207;
+    background-image: linear-gradient(to bottom right, #020207, #5d6164);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.header .header-buttons-container ul .signup {
+    background-color: #0e52b9;
+    background-image: linear-gradient(to bottom right, #0e52b9, rgb(84, 151, 214));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.header .header-buttons-container ul .signout {
+    background-color: #125277;
+    background-image: linear-gradient(to bottom right, #125277, #347ea8);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.header .header-buttons-container ul .signin:hover {
+    background-color: #0a47a1; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #0a47a1, rgb(60, 140, 214));
+}
+
+.header .header-buttons-container ul .signup:hover {
+    background-color: #020207; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #020207, #5d6164);
+}
+
+.header .header-buttons-container ul .signout:hover {
+    background-color: #943806; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #943806, #e27f4a);
+}
+
+.header .header-buttons-container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    border-bottom: 2px solid #A10035;
+}
+
+.header #signin-btn,
+#signup-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: rgb(12, 141, 12);
+    color: white;
+    background-image: linear-gradient(green, rgb(9, 130, 160));
+}
+
+#signin-btn a,
+#signup-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .hamburger {
+    display: none;
+}
+
+.header .hamburger .line {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 3px;
+}
+
+.header .nav-responsive {
+    display: none;
+}
+
+/* header css ends here */
+
+/* Media query for header */
+@media (max-width: 780px) {
+    .header {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .hamburger {
+        display: block;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .header .header-buttons-container {
+        display: none;
+    }
+
+    .header .nav-responsive {
+        height: 0px;
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: black;
+        transition: 0.3s;
+    }
+
+    .header .nav-responsive.heighty {
+        height: 400px;
+    }
+
+    .header .nav-responsive.heighty .nav-list-responsive {
+        opacity: 1;
+        display: block;
+    }
+
+    .header .nav-list-responsive {
+        display: none;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .header .nav-list-responsive li {
+        list-style-type: none;
+        padding-bottom: 35px;
+    }
+
+    .header .nav-list-responsive li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    
+}

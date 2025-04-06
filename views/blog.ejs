@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Programming Blog | Blog</title>
+</head>
+
+<body>
+    <!-- header's html starts below -->
+    <%- include('layouts/header'); -%>
+    <!-- header html ends here -->
+
+    <!-- main html starts here -->
+    <main class="blog-page-main">
+        <% if(adminposts) { %>
+        <% adminposts = adminposts.reverse(); %>
+        <% for (var i = 0; i < adminposts.length; i++) { %>
+        <div class="blog-container">
+            <a href="/blog/post/<%= adminposts[i].posttitle %>"></a>
+            <h1><a href="/blog/post/<%= adminposts[i].posttitle %>"><%= adminposts[i].title %></a></h1>
+            <p><a href="/blog/post/<%= adminposts[i].posttitle %>"><%= adminposts[i].overview %></a></p>
+            
+            <a type="button" href="/blog/post/<%= adminposts[i].posttitle %>" class="blog-link-btn" id="blog-link-btn-1">Read more...</a>
+        </div>
+        
+        <% } %>
+        <% } %>
+
+    </main>
+    <!-- main html ends here -->
+
+    <hr class="footer-hr">
+
+      <!-- footer html starts here -->
+      <%- include('layouts/footer'); -%>
+      <!-- footer html ends here -->
+
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</body>
+
+</html>

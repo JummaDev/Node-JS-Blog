@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="<%= adminposts.description %>">
+    <meta name="keywords" content="<%= adminposts.keywords %>">
+    
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/post.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/prism.css" />
+    
+    <title><%= adminposts.posttitle %></title>
+  </head>
+
+  <body>
+    <!-- header's html starts below -->
+    <%- include('layouts/header'); -%>
+    <!-- header html ends here -->
+
+    <main class="post-page-main">
+        <% if(typeof commentfail != 'undefined') { %>  
+            <h4 class="comment-fail-message"><%= commentfail %></h4>
+        <% } %>
+        
+
+        <% if(typeof commentsuccess != 'undefined') { %>
+            <h4 class="comment-success-message"><%= commentsuccess %></h4>
+        <% } %>
+
+        <% if(typeof replyfail != 'undefined') { %>  
+            <h4 class="reply-fail-message"><%= replyfail %></h4>
+        <% } %>
+        
+
+        <% if(typeof replysuccess != 'undefined') { %>
+            <h4 class="reply-success-message"><%= replysuccess %></h4>
+        <% } %>
+        
+
+      <div class="post-content">
+        <h1><%= adminposts.title %></h1>
+        <div class="publish-date">
+          Published on: <%= adminposts.datePosted.toDateString() %>
+        </div>
+        <hr class="content-hr" />
+
+        <% if(adminposts.para1) { %>
+        <p><%= adminposts.para1 %></p>  
+        <% } %>
+        
+        <% if(adminposts.linkurl1) { %>
+        <a href="<%=adminposts.linkurl1%>" class="link"><%=adminposts.linktext1%></a>
+        <% } %>
+        
+        <% if(adminposts.image1) { %>
+        <img src="/uploads/<%=adminposts.image1%>" alt="" width="250px" height="250px">
+        <% } %>  
+        
+        <% if(adminposts.htmlcode1) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode1 %>
+            </code>
+        </pre>
+        <% } %>
+
+        <% if(adminposts.csscode1) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode1 %>
+            </code>
+        </pre>
+        <% } %>
+
+        <% if(adminposts.javascriptcode1) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode1 %>
+            </code>
+        </pre>
+        <% } %>
+
+        <% if(adminposts.reactcode1) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode1 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para2) { %>
+        <p><%= adminposts.para2 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl2) { %>
+        <a href="<%=adminposts.linkurl2%>" class="link"><%=adminposts.linktext2%></a>
+        <% } %>
+        
+        <% if(adminposts.image2) { %>
+        <img src="/uploads/<%=adminposts.image2%>" alt="" width="250px" height="250px"> 
+        <% } %>
+
+        <% if(adminposts.htmlcode2) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode2 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode2) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode2 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode2) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode2 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode2) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode2 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para3) { %>
+        <p><%= adminposts.para3 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl3) { %>
+        <a href="<%=adminposts.linkurl3%>" class="link"><%=adminposts.linktext3%></a>
+        <% } %>
+        
+        <% if(adminposts.image3) { %>
+        <img src="/uploads/<%=adminposts.image3%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode3) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode3 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode3) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode3 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode3) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode3 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode3) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode3 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para4) { %>
+        <p><%= adminposts.para4 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl4) { %>
+        <a href="<%=adminposts.linkurl4%>" class="link"><%=adminposts.linktext4%></a>
+        <% } %>
+        
+        <% if(adminposts.image4) { %>
+        <img src="/uploads/<%=adminposts.image4%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode4) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode4 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode4) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode4 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode4) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode4 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode4) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode4 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para5) { %>
+        <p><%= adminposts.para5 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl5) { %>
+        <a href="<%=adminposts.linkurl5%>" class="link"><%=adminposts.linktext5%></a>
+        <% } %>
+        
+        <% if(adminposts.image5) { %>
+        <img src="/uploads/<%=adminposts.image5%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode5) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode5 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode5) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode5 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode5) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode5 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode5) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode5 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para6) { %>
+        <p><%= adminposts.para6 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl6) { %>
+        <a href="<%=adminposts.linkurl6%>" class="link"><%=adminposts.linktext6%></a>
+        <% } %>
+        
+        <% if(adminposts.image6) { %>
+        <img src="/uploads/<%=adminposts.image6%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode6) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode6 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode6) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode6 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode6) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode6 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode6) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode6 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para7) { %>
+        <p><%= adminposts.para7 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl7) { %>
+        <a href="<%=adminposts.linkurl7%>" class="link"><%=adminposts.linktext7%></a>
+        <% } %>
+        
+        <% if(adminposts.image7) { %>
+        <img src="/uploads/<%=adminposts.image7%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode7) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode7 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode7) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode7 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode7) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode7 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode7) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode7 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para8) { %>
+        <p><%= adminposts.para8 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl8) { %>
+        <a href="<%=adminposts.linkurl8%>" class="link"><%=adminposts.linktext8%></a>
+        <% } %>
+        
+        <% if(adminposts.image8) { %>
+        <img src="/uploads/<%=adminposts.image8%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode8) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode8 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode8) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode8 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode8) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode8 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode8) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode8 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para9) { %>
+        <p><%= adminposts.para9 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl9) { %>
+        <a href="<%=adminposts.linkurl9%>" class="link"><%=adminposts.linktext9%></a>
+        <% } %>
+        
+        <% if(adminposts.image9) { %>
+        <img src="/uploads/<%=adminposts.image9%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode9) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode9 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode9) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode9 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode9) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode9 %>
+            </code>
+        </pre>
+        <% } %>
+        
+        <% if(adminposts.reactcode9) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode9 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.para10) { %>
+        <p><%= adminposts.para10 %></p>
+        <% } %>
+
+        <% if(adminposts.linkurl10) { %>
+        <a href="<%=adminposts.linkurl10%>" class="link"><%=adminposts.linktext10%></a>
+        <% } %>
+        
+        <% if(adminposts.image10) { %>
+        <img src="/uploads/<%=adminposts.image10%>" alt="" width="250px" height="250px">
+        <% } %>
+        
+        <% if(adminposts.htmlcode10) { %>
+        <pre>
+            <code class="language-html">
+<%= adminposts.htmlcode10 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.csscode10) { %>
+        <pre>
+            <code class="language-css">
+<%= adminposts.csscode10 %>
+            </code>
+        </pre>
+        <% } %> 
+        
+        <% if(adminposts.javascriptcode10) { %>
+        <pre>
+            <code class="language-javascript">
+<%= adminposts.javascriptcode10 %>
+            </code>
+        </pre>
+        <% } %>
+
+        <% if(adminposts.reactcode10) { %>
+        <pre>
+            <code class="language-jsx">
+<%= adminposts.reactcode10 %>
+            </code>
+        </pre>
+        <% } %> 
+
+      </div>
+
+      <hr />
+
+      <% if(!loggedIn) { %>
+      <div class="sign-in-guide">Please sign in to comment...</div>
+      <% } %>
+
+      <% if(loggedIn) { %>
+      <div class="comment-form-container">
+        <form action="/blog/post/comment" method="post">
+          <h4>Add a comment:</h4>
+          <input name="postid" type="hidden" value="<%= adminposts._id %>" />
+          <textarea name="comment" class="comment-text-area" cols="40" rows="8"></textarea><br /><br />
+          <input type="submit" class="post-comment-btn" value="Post Comment" />
+        </form>
+      </div>
+      <% } %>
+      <!-- loggedIn process ends here-->
+      <% var count=0; %> 
+      <% if(adminposts.comments) { %> 
+        <% for(i=0; i < adminposts.comments.length; i++) { %> 
+        <% count++; %> 
+        <% } %> 
+        <% } %>
+      <div class="comments-count">Comments: (<%= count %>)</div>
+      <hr class="comments-count-underline" />
+
+      <div class="comments-section">
+        <!--For loop for fetching comments data-->
+        <% if(adminposts.comments) { %> 
+            <% adminposts.comments = adminposts.comments.reverse(); %> 
+            <% adminposts.comments.forEach(function(comment) { %>
+        <div class="user-comment-container">
+          <div class="user-comments">
+            <div class="user-logo-email-container">
+            <h4 class="user-comment-email"><%= comment.name %></h4>
+            <span class="user-comment-date">
+              <%= comment.dateposted.toDateString() %>
+            </span>
+            </div>
+            <p class="user-comment-data"><%= comment.comment %></p>
+             <!-- replies -->
+            <% if(comment.replies) { %>
+            <button class="view-replies-btn">View All Replies</button>
+            <% comment.replies = comment.replies.reverse(); %> 
+            <% comment.replies.forEach(function(replies) { %>
+            <div class="reply-user-container">
+            <h4 class="reply-comment-email"><%= replies.replyusername %></h4>
+              <span class="reply-comment-date">
+                <%= replies.replydateposted.toDateString() %></span>
+              <p class="reply-comment-data"><%= replies.replycomment %></p>
+            </div>
+            <% }) %>
+            <!-- End of replies forEach loop -->
+            <% } %>
+            <!-- End of if condition -->
+
+            <% if(loggedIn) { %>
+            <button class="replyBtn">Reply</button>
+            <div class="reply-form">
+              <form action="/blog/post/reply" method="post">
+                <input type="text" name="replycomment" id="replycomment" />
+                <input
+                  name="targcomment"
+                  id="targcomment"
+                  type="hidden"
+                  value="<%= comment.comment %>" />
+                
+                <input
+                  name="adminpostid"
+                  id="adminpostid"
+                  type="hidden"
+                  value="<%= adminposts._id %>" />
+                <div class="reply-btns-container">
+                <div class="cancel-reply-btn">CANCEL</div>
+                <div>
+                <input
+                  type="submit"
+                  class="reply-submit-btn"
+                  value="POST REPLY" />
+                </div>
+                </div>
+              </form>
+            </div>
+            <% } %>
+            <!-- loggedIn process ends here-->
+          </div>
+          <% }) %>
+          <!-- End of comment forEach Loop -->
+          <% } %>
+        </div>
+      </div>
+    </main>
+
+    <hr class="footer-hr" />
+
+    <!-- footer html starts here -->
+    <%- include('layouts/footer'); -%>
+    <!-- footer html ends here -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/prism.js"></script>
+    <script src="/js/post.js"></script>
+
+    <script>
+        $(".user-comments").each(function(){
+            const replyforms = $(this).children(".reply-form");
+            const replyusercontainer = $(this).children(".reply-user-container");
+            $(this).children(".replyBtn").css("cursor","pointer");
+            $(this).children(".view-replies-btn").css("cursor","pointer");
+            replyforms.find(".cancel-reply-btn").css("cursor","pointer");
+            replyforms.find(".reply-submit-btn").css("cursor","pointer");
+
+            replyforms.find(".cancel-reply-btn").on('click',function(){
+                replyforms.css("display","none");
+            })
+
+            $(this).children(".view-replies-btn").on('click',function(){
+                if(replyusercontainer.css("display") == "none"){
+                    replyusercontainer.css("display","block");
+                }else {
+                    replyusercontainer.css("display","none");
+                }
+            })
+
+            $(this).children(".replyBtn").on('click',function(){
+                if(replyforms.css("display") == "none"){
+                replyforms.css("display","block");
+                }else{
+                    replyforms.css("display","none");
+                }
+            })      
+           
+        })
+
+
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,237 @@
+/* main css starts here */
+.post-page-main {
+    min-height: 100vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.post-page-main .comment-fail-message,.reply-fail-message {
+    background-color: rgba(85, 15, 10, 0.808);
+    color: white;
+    text-align: center;
+}
+
+.post-page-main .comment-success-message,.reply-success-message {
+    background-color: rgba(6, 32, 15, 0.753);
+    color: white;
+    text-align: center;
+}
+
+.post-page-main .post-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.post-page-main .post-content h1 {
+    font-size: 40px;
+    color: var(--dark-blue-color);
+}
+
+.post-page-main .post-content .publish-date {
+    font-size: 16px;
+    color: rgb(122, 121, 121);
+}
+
+.post-page-main .post-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2c3241;
+    white-space: pre-line;
+}
+
+.post-page-main .post-content img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.post-page-main .post-content .link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* comment section starts here */
+.comments-count {
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 4px;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.comments-count-underline {
+    width: 60%;
+    color: rgb(247, 247, 248);
+}
+
+.sign-in-guide {
+    font-weight: bold;
+    margin-top: 3rem;
+    text-align: center;
+    color: #2c3241;
+}
+
+.comment-form-container {
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.comment-form-container .comment-text-area {
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+}
+
+.comment-form-container .post-comment-btn {
+    background-color: rgb(32, 32, 145);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.comment-form-container h4 {
+    color: #2c3241;
+}
+
+.comments-section {
+    width: 60%;
+}
+
+.user-comment-container {
+    margin-top: 1rem;
+}
+
+.user-comment-container .user-comments{
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.user-comments h4 {
+    display: inline;
+}
+
+.user-comments .user-comment-date {
+    font-size: 10px;
+}
+
+.user-comments .user-comment-data {
+    color: #2f3238;
+}
+
+.user-logo-email-container {
+    margin-bottom: 10px;
+}
+
+.user-logo-email-container img {
+    border-radius: 25px;
+}
+
+/* reply section css starts here */
+.replyBtn {
+    margin-top: 12px;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 1rem;
+}
+
+.reply-form{
+    display: none;
+}
+
+.reply-form form {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.reply-btns-container {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.cancel-reply-btn {
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 12px;
+    background-color: rgb(240, 244, 248);
+}
+
+.reply-submit-btn {
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 12px;
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+.reply-user-container {
+    display: none;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.view-replies-btn {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    background: #2c3241;
+    color: white;
+}
+
+.reply-comment-date {
+    font-size: 10px;
+}
+
+.reply-comment-data {
+    margin-top: 10px;
+    color: #2f3238;
+}
+/* main css ends here */
+
+/* media query starts here */
+@media (max-width: 540px) {
+    .post-page-main .post-content h1 {
+        font-size: 25px;
+    }
+
+    .post-page-main .post-content .publish-date {
+        font-size: 12px;
+    }
+
+    .post-page-main .post-content p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .comments-count {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .comments-count-underline {
+        width: 80%;
+    }
+
+    .comments-section {
+        width: 80%;
+    }
+}

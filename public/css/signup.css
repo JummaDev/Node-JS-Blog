@@ -1,0 +1,57 @@
+.signup-page-main .signup-errors {
+    background-color: #a3190f;
+    color: white;
+    text-align: center;
+}
+
+.signup-page-main .signup-success {
+    background-color: #18690d;
+    color: white;
+    text-align: center;
+}
+
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container #signup-form {
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.signup-container #signup-form h2 {
+    text-align: center;
+}
+
+.signup-container #signup-form h5 {
+    margin-top: 2rem;
+}
+
+.signup-container #signup-form input {
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 3px;
+}
+
+#signup-form #signupBtn {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #0e52b9;
+    background-image: linear-gradient(to bottom right, #0e52b9, rgb(84, 151, 214));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#signup-form #signupBtn:hover {
+    background-color: #020207; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #020207, #5d6164);
+}
